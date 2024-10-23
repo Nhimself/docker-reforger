@@ -105,10 +105,12 @@ def generate_config():
             config["a2s"] = None
 
         if env_defined("RCON_ADDRESS") and env_defined("RCON_PORT"):
+            if env_defined("RCON_PASSWORD"):
+                rcon_password = get_secret_or_env_value("RCON_PASSWORD")
             config["rcon"] = {
                 "address": os.environ["RCON_ADDRESS"],
                 "port": int(os.environ["RCON_PORT"]),
-                "password": os.environ["RCON_PASSWORD"],
+                "password": rcon_password,
                 "permission": os.environ["RCON_PERMISSION"],
             }
         else:
