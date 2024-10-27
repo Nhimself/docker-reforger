@@ -30,6 +30,11 @@ jobs:
 #        with:
 #          password: ${{ secrets.DOCKERHUB_TOKEN }}
 #          username: ${{ secrets.DOCKERHUB_USERNAME }}
+#      - 
+#        uses: actions/checkout@v4
+#        name: Build the Docker image
+#        working-directory: ./build
+#        run: docker build . --file Dockerfile --tag nhimself/docker-reforger:latest
       - 
         name: Build and export to Docker
         uses: docker/build-push-action@v6
@@ -50,7 +55,7 @@ jobs:
       -
         name: Build and push
         uses: docker/build-push-action@v6
-        file: ./build/Dockerfile
+        context: ./build
         with:
           context: "{{defaultContext}}:build"
           platforms: linux/amd64
