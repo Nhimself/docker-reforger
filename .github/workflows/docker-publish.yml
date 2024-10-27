@@ -82,7 +82,7 @@ jobs:
           context: ./build
           file: ./build/Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ github.repository_owner }}/arma-reforger:latest
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
       # Sign the resulting Docker image digest except on PRs.
