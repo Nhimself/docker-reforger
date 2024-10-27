@@ -34,7 +34,7 @@ jobs:
         name: Build and export to Docker
         uses: docker/build-push-action@v6
         with:
-          file: ./build/Dockerfile
+          context: ./build
           platforms: linux/amd64
           load: true
           tags: ${{ env.TEST_TAG }}
@@ -54,6 +54,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./build
+          file: ./build/Dockerfile
           platforms: linux/amd64
           push: true
           tags: ${{ env.LATEST_TAG }}
