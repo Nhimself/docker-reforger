@@ -55,9 +55,8 @@ jobs:
       -
         name: Build and push
         uses: docker/build-push-action@v6
-        working-directory: ./build
         with:
-          context: "{{defaultContext}}:build"
+          context: ./build
           platforms: linux/amd64
           push: true
           tags: ${{ env.LATEST_TAG }}
