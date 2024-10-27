@@ -50,6 +50,7 @@ jobs:
       -
         name: Build and push
         uses: docker/build-push-action@v6
+        file: ./build/Dockerfile
         with:
           context: "{{defaultContext}}:build"
           platforms: linux/amd64
