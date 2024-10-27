@@ -5,6 +5,9 @@ Primary change is supporting [docker secrets](https://docs.docker.com/engine/swa
 
 [![Build image and publish](https://github.com/Nhimself/docker-reforger/actions/workflows/ghcr.yaml/badge.svg)](https://github.com/Nhimself/docker-reforger/actions/workflows/ghcr.yaml)
 
+# For freedom fighers guild members
+Please see the [freedom-fighers](https://github.com/Nhimself/docker-reforger/tree/main/freedom-fighters) folder for mods_list file and pre-made compose file
+
 # Arma Reforger Dedicated Server
 
 An Arma Reforger dedicated server. Updates to the latest version every time it is restarted.
