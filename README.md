@@ -1,3 +1,10 @@
+# This repo is a fork
+of the official docker reforger script all code originates from that repo. Thanks: @acemod [acemod/docker-reforger:main](https://github.com/acemod/docker-reforger)
+This image uses the official steamcmd and has some code optimizations, making it easier to read and test before launch.
+Primary change is supporting [docker secrets](https://docs.docker.com/engine/swarm/secrets/) 
+
+[![Build image and publish](https://github.com/Nhimself/docker-reforger/actions/workflows/ghcr.yaml/badge.svg)](https://github.com/Nhimself/docker-reforger/actions/workflows/ghcr.yaml)
+
 # Arma Reforger Dedicated Server
 
 An Arma Reforger dedicated server. Updates to the latest version every time it is restarted.
