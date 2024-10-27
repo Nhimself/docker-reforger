@@ -17,3 +17,4 @@ jobs:
     - name: Build the Docker image
       working-directory: ./build
       run: docker build . --file Dockerfile --tag nhimself/docker-reforger:latest
+      
