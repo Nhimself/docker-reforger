@@ -49,11 +49,20 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      - 
+        uses: actions/checkout@v4
+        name: Build the Docker image
+        working-directory: ./build
+        run: docker build --pull --rm -f "build\Dockerfile" --tag nhimself/docker-reforger:latest
+        with:
+          load: true
+          tags: nhimself/docker-reforger:latest
       -
         name: Build and push
         uses: docker/build-push-action@v6
         with:
-          context: ./build
+          build-contexts: |
+            docker-reforger=docker-image://nhimself/docker-reforger:latest
           file: ./build/Dockerfile
           platforms: linux/amd64
           push: true
