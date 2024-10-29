@@ -33,7 +33,7 @@ RUN set -x \
 # Add reforger server to the image 
 FROM build_stage AS arma-reforger
 
-COPY *.py /reforger
+COPY launch.py /reforger
 COPY docker_default.json /reforger
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
