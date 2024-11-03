@@ -3,7 +3,7 @@ of the official docker reforger script all code originates from that repo. Thank
 This image uses the official steamcmd and has some code optimizations, making it easier to read and test before launch.
 Primary change is supporting [docker secrets](https://docs.docker.com/engine/swarm/secrets/) 
 
-[![Build Docker image](https://github.com/Nhimself/docker-reforger/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Nhimself/docker-reforger/actions/workflows/docker-image.yml) [![Publish to Docker](https://github.com/Nhimself/docker-reforger/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/Nhimself/docker-reforger/actions/workflows/docker-publish.yml) [![Build image and publish](https://github.com/Nhimself/docker-reforger/actions/workflows/ghcr.yaml/badge.svg)](https://github.com/Nhimself/docker-reforger/actions/workflows/ghcr.yaml)
+[![Build Docker image](https://github.com/Nhimself/docker-reforger/actions/workflows/docker-image.yml/badge.svg)](https://github.com/Nhimself/docker-reforger/actions/workflows/docker-image.yml)  [![Build and publish to Docker](https://github.com/Nhimself/docker-reforger/actions/workflows/ghcr.yaml/badge.svg)](https://github.com/Nhimself/docker-reforger/actions/workflows/ghcr.yaml)
 
 # For freedom fighers guild members
 Please see the [freedom-fighers](https://github.com/Nhimself/docker-reforger/tree/main/freedom-fighters) folder for mods_list file and pre-made compose file
