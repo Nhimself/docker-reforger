@@ -82,13 +82,9 @@ def generate_config():
     if os.environ["ARMA_CONFIG"] != "docker_generated":
         config_path = f"/reforger/Configs/{os.environ['ARMA_CONFIG']}"
     else:
-        # Load the default or generated config
-        if os.path.exists(CONFIG_GENERATED):
-            with open(CONFIG_GENERATED) as f:
-                config = json.load(f)
-        else:
-            with open("/reforger/docker_default.json") as f:
-                config = json.load(f)
+        # Load the default config
+        with open("/reforger/docker_default.json") as f:
+            config = json.load(f)
 
         # Building needed structure to ensure Properties are set
         ensure_game_properties(config)
