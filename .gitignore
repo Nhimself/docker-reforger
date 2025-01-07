@@ -1,1 +1,7 @@
 .venv
+.pyc
+/reforger
+/reforger_workshop
+/reforger_workshop1
+/steam
+/build

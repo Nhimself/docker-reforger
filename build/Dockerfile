@@ -4,6 +4,7 @@
 
 # Fetch docker image with steamcmd pre-installed
 # Build stage
+
 FROM cm2network/steamcmd:root AS build_stage
 
 LABEL maintainer="Nhimself - https://github.com/Nhimself"

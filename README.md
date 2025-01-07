@@ -38,6 +38,10 @@ Simply check-out / copy [the provided docker-compose.yml](docker-compose.yml) an
 
 Check [the Dockerfile](Dockerfile#L32-L67), more docs will come later.
 
+Build using buildx
+
+`docker buildx build -f Dockerfile . --tag dockerreforger:buildx`
+
 ### Configs
 
 By default the configs are generated from the ENV variables in the dockerfile. After the first run the file can be expanded with additional options manually, but the fields will always be overwritten by the ENV variables.
